@@ -154,5 +154,9 @@ namespace Calculator
                 Modulus.PerformClick();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

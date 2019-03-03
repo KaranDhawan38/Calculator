@@ -38,6 +38,7 @@
             this.Result = new System.Windows.Forms.TextBox();
             this.Number1 = new System.Windows.Forms.TextBox();
             this.Number2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Operation
@@ -146,12 +147,24 @@
             this.Number2.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             this.Number2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Number2_KeyUp);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(183, 301);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 24);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "© Karan Dhawan";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(328, 327);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
             this.Controls.Add(this.Result);
@@ -181,6 +194,7 @@
         private System.Windows.Forms.TextBox Result;
         private System.Windows.Forms.TextBox Number1;
         private System.Windows.Forms.TextBox Number2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
